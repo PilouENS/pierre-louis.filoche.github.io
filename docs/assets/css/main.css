@@ -27,10 +27,15 @@
     background: white;
     padding: 2em;
     border-radius: 10px;
-    max-width: 600px;
-    text-align: center;
+    max-width: 720px;
+    text-align: justify;
+    text-align-last: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     position: relative;
+}
+
+.popup-content > :last-child {
+    margin-bottom: 0 !important;
 }
 
 /* Bouton de fermeture */
@@ -240,7 +245,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #3a73be !important;
 		}
 
 	strong, b {
@@ -255,12 +260,24 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	#main p,
+	#main li {
+		color: #000000;
+		font-size: 1.1em;
+		font-weight: 500;
+	}
+
+	article p {
+		color: #f8fcfd !important;
+		
+	}
+
 	h1 {
 		font-size: 2.75em;
 		font-weight: 700;
 		line-height: 1.3;
 		margin: 0 0 1em 0;
-		letter-spacing: -0.035em;
+		
 	}
 
 		h1 a {
@@ -289,7 +306,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1967,12 +1984,35 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
+		margin: 0 0 1.25em 0;
+		padding-left: 1.2em;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0.35em;
+			margin-bottom: 0.35em;
+		}
+
+		ul li:last-child {
+			margin-bottom: 0;
+		}
+
+		ul ul,
+		ol ul {
+			list-style: circle;
+			margin-top: 0.5em;
+			margin-bottom: 0.75em;
+			padding-left: 1.15em;
+		}
+
+		ul ul li,
+		ol ul li {
+			font-size: 0.97em;
+		}
+
+		ul ul ul,
+		ol ul ul {
+			list-style: square;
 		}
 
 		ul.alt {
